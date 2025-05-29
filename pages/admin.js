@@ -31,11 +31,12 @@ export default function AdminPage() {
 
         try {
             // Substitua 'YOUR_CLIENT_ID' pelo seu Client-ID do Imgur
-            const response = await axios.post('https://api.imgur.com/3/upload', imageData, {
+            const response = await axios.post('https://api.imgur.com/3/image', imageData, {
                 headers: {
-                    Authorization: 'Client-ID 3d953add1e4524f', // Substitua com seu Client-ID do Imgur
+                    Authorization: 'Client-ID 3d953add1e4524f',
                 },
             });
+
 
             const imageUrl = response.data.data.link; // URL da imagem hospedada no Imgur
 
