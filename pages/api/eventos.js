@@ -19,7 +19,7 @@ export default async function handler(req, res) {
             data,
             local,
             descricao,
-            imagem: imagemUrl, // ou "imagemUrl" se preferir manter o mesmo nome
+            imagemUrl, // ou "imagemUrl" se preferir manter o mesmo nome
         });
 
         console.log('✅ Evento salvo com ID:', docRef.id);
